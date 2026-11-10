@@ -14,7 +14,7 @@ files = os.listdir(vine_thumbnails_dir)
 
 print(f"Found {len(files)} files in {vine_thumbnails_dir}")
 
-files = files[:10]  # limit for testing
+# files = files[:10]  # limit for testing
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
